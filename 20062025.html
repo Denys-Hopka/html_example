@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Responsive Grid-Webdesign</title>
+    <style>
+
+html {
+height: 100%;
+background-color:#efece6;
+}
+body {
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-first-grid {
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+
+  background-color: #e4e4e4;
+ margin-bottom: 100px;
+width: 80%;
+grid-auto-rows: 200px;
+ }
+
+
+  
+
+
+ [class^='grid-item'] {
+  outline: 2px solid #f90;
+  font-size: 30px;
+ background: linear-gradient(to top, rgb(236, 215, 172), rgb(255, 248, 199));
+ display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.8s, outline 0.8s;
+ }
+ [class^='grid-item']:hover{
+  transform: translateY(-4px);
+  outline: 2px solid rgb(255, 202, 123);
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1> FutureZone 20.06.2025 von Hopka. "Die Lesezeichen. T.2"</h1>
+    <div class="my-first-grid">
+      <div class="grid-item-1"><a href="https://google.com">Google</a></div>
+      <div class="grid-item-2"><a href="https://dict.leo.org/">Wörterbuch</a></div>
+      <div class="grid-item-3"><a href="https://www.bbq.de/">BBQ</a></div>
+      <div class="grid-item-4"><a href="https://www.biwe-bbq.de/ueber-uns/vor-ort/ludwigsburg">BBQ Ludwigsburg</a></div>
+      <div class="grid-item-5"><a href="https://mail.google.com/">Gmail</a></div>
+      <div class="grid-item-6"><a href="https://www.deepl.com/">Deepl</a></div>
+      <div class="grid-item-7"><a href="https://chatgpt.com/">ChatGPT</a></div>
+      <div class="grid-item-8"><a href="https://news.google.com/">Nachrichten</a></div>
+      <div class="grid-item-9"><a href="https://developer.mozilla.org/">Lernmaterialien</a></div>
+
+     </div>
+   </body>
+
+</html>
